@@ -1,5 +1,5 @@
 import axios from 'axios';
-import Chef from '../schemas/Chef';
+import Chef from '../../schemas/Chef';
 const baseURL=process.env.NEXT_PUBLIC_API_URL;
 
 export const getChef=async():Promise<Chef[]>=>{
