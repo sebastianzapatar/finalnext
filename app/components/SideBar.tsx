@@ -4,8 +4,8 @@ import { Sheet,SheetTrigger, SheetContent } from "@/components/ui/sheet";
 import Link from "next/link";
 const navItems=[
     {name:"Home",href:"/"},
-    {name:"List Chef",href:"/chef"},
-    {name:"Lista de platos",href:"/lista"},
+    {name:"List Chef",href:"/list"},
+    {name:"Lista de platos",href:"/list"},
     {name:"Manuela cancele ಠ_ಠ",href:"/contact"}
 ]
 
