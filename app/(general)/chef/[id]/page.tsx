@@ -1,5 +1,5 @@
 import { ChefDetail } from "@/app/components/chef/ChefDetail";
-import { Metadata } from "next";
+
 
 type Props = {
   params: {
