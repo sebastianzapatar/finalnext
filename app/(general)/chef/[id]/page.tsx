@@ -2,13 +2,9 @@
 import { ChefDetail } from "@/app/components/chef/ChefDetail";
 import { getDishesByChef } from "@/app/services/chefs/getDishesByChef";
 
-type Props = {
-  params: {
-    id: string;
-  };
-};
 
-export default async function ChefDetailPage({ params }: Props) {
+
+export default async function ChefDetailPage({ params }: { params: { id: string } }) {
   const dishes = await getDishesByChef(params.id);
   return <ChefDetail dishes={dishes} />;
 }
