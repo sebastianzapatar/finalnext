@@ -18,6 +18,6 @@ export const getChefById=async (id:string):Promise<Chef>=>{
         const response=await axios.get(baseURL+"/chef/"+id);
         return response.data;
     }catch(error){
-        throw new Error("Chef not found");
+        throw new Error("Chef not found"+error);
     }
 }

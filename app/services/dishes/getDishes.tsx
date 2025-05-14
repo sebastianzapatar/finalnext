@@ -7,6 +7,6 @@ export const getDish=async():Promise<Dish[]>=>{
             const response=await axios.get(baseURL+"/manuelacancele");
             return response.data;
         }catch(error){
-            throw new Error("Error al obtener de los platos, Manuela Cancele");
+            throw new Error("Error al obtener de los platos, Manuela Cancele"+error);
         }
 }
