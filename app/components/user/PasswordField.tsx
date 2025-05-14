@@ -4,8 +4,12 @@ import { FormField,
     FormControl,
     FormMessage
    } from "@/components/ui/form";
-   import { Input } from "@/components/ui/input";
-  export const PasswordField = ({control}:{control:any}) => {
+import { Input } from "@/components/ui/input";
+import { Control } from "react-hook-form";
+interface PasswordFormValues {
+  password: string;
+}
+  export const PasswordField = ({control}:{control:Control<PasswordFormValues>}) => {
     return (
       <FormField
       control={control}

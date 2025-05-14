@@ -6,6 +6,8 @@ export const getDishesByChef=async(id:string):Promise<Dish[]>=>{
         const response=await axios.get(`${baseURL}/chef/${id}/dishes`);
         return response.data;
     }catch(error){
+        console.log(error);
         throw new Error("Error al obtener los chefs, Manuela Cancele");
+        
     }
 }

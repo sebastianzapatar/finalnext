@@ -7,6 +7,6 @@ export const getChef=async():Promise<Chef[]>=>{
             const response=await axios.get(baseURL+"/chef");
             return response.data;
         }catch(error){
-            throw new Error("Error al obtener los chefs, Manuela Cancele");
+            throw new Error("Error al obtener los chefs, Manuela Cancele"+error);
         }
 }
